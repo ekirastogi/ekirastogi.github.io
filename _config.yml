@@ -12,7 +12,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
+includes:
+  - pages
+
 exclude:
    - Gemfile
    - Gemfile.lock
