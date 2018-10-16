@@ -15,9 +15,18 @@ plugins:
 includes:
   - pages
 
+################################
 # Disqus Comments
+################################
 disqus:
   shortname: ekiras
+
+################################
+# Analytics Settings
+################################
+google_analytics: UA-56017203-1
+google_analytics_async: true
+
 
 permalink: /:categories/:title
 
