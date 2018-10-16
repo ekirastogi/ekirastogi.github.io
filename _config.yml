@@ -1,0 +1,23 @@
+title: Ekiras
+email: ekirastogi@gmail.com
+description: Awesome blog tutorials
+baseurl: ""
+url: ""
+twitter_username: ekirastogi
+github_username:  ekiras
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
