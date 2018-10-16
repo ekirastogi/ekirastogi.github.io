@@ -7,8 +7,15 @@ url: "https://ekirastogi.github.io"
 twitter_username: ekirastogi
 github_username:  ekirastogi
 
-# Build settings
+################################
+# Markdown Settings
+################################
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 theme: minima
 
 ################################
