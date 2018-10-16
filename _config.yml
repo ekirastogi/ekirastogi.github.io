@@ -17,8 +17,7 @@ includes:
 
 # Disqus Comments
 disqus:
-  shortname: ekiras-test
-
+  shortname: ekiras
 
 permalink: /:categories/:title
 
