@@ -25,7 +25,7 @@ plugins:
   - jekyll-feed
   - jekyll-toc
   - jekyll-redirect-from
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
 
 whitelist:
   - jekyll-redirect-from
