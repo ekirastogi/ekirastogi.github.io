@@ -10,8 +10,17 @@ github_username:  ekirastogi
 # Build settings
 markdown: kramdown
 theme: minima
+
+################################
+# Plugins Settings
+################################
 plugins:
   - jekyll-feed
+  - jekyll-toc
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+whitelist:
+  - jekyll-redirect-from
 
 includes:
   - pages
