@@ -4,7 +4,7 @@ description: Awesome blog tutorials
 baseurl: ""
 url: "https://ekirastogi.github.io"
 twitter_username: ekirastogi
-github_username:  ekiras
+github_username:  ekirastogi
 
 # Build settings
 markdown: kramdown
