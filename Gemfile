@@ -8,7 +8,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.4"
+# gem "jekyll", "~> 3.8.4"
+
+gem "github-pages", group: :jekyll_plugins
 gem 'jekyll-toc'
 gem 'jekyll-redirect-from'
 gem 'jekyll-seo-tag'
