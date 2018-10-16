@@ -15,6 +15,13 @@ plugins:
 includes:
   - pages
 
+# Disqus Comments
+disqus:
+  shortname: ekiras-test
+
+
+permalink: /:categories/:title
+
 exclude:
    - Gemfile
    - Gemfile.lock
