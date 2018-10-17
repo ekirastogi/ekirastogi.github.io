@@ -24,11 +24,11 @@ theme: minima
 plugins:
   - jekyll-feed
 #  - jekyll-toc
-  - jekyll-redirect-from
+#  - jekyll-redirect-from
 #  - jekyll-seo-tag
 
-whitelist:
-  - jekyll-redirect-from
+#whitelist:
+#  - jekyll-redirect-from
 
 includes:
   - pages
@@ -46,7 +46,12 @@ google_analytics: UA-56017203-1
 google_analytics_async: true
 
 
-permalink: /:categories/:title
+permalink: /:categories:/title
+
+collections:
+  dumps:
+    output: true
+    permalink: /:year/:month/:title
 
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
