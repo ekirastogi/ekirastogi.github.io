@@ -22,13 +22,19 @@ layout: default
     </header>
 
     <!--{% include author.html %}-->
+    <!--Adsense-->
+    {%- include adsense_responsive.html -%}
 
+    <!--Content-->
     <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
     </div>
+    <!--Adsense-->
+    {%- include adsense_responsive.html -%}
 
+    <!--Disqus-->
     {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+        {%- include disqus_comments.html -%}
     {%- endif -%}
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
