@@ -42,7 +42,7 @@ google_analytics: UA-56017203-1
 google_analytics_async: true
 
 
-permalink: /:categories:/title
+permalink: /:categories/:title
 
 collections:
   dumps:
