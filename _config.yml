@@ -49,6 +49,17 @@ collections:
     output: true
     permalink: /:year/:month/:title
 
+################################
+# Default Settings
+################################
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      toc: true
+
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
