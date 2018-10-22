@@ -1,8 +1,16 @@
 ---
 layout: post
 title: Tree Traversal
+categories: [data-structure, trees]
+tags: [Trees, DataStructures, Traversal]
+labels: [Trees, DataStructures, Traversal]
 ---
-{:toc}
+
+# Tree Traversal
+A Tree can be traversed in the following standard ways
+1. In Order 
+2. Pre Order
+3. Post Order
 
 {% capture code%} {% include _treenode.md%} {% endcapture %}
 {{code}}
