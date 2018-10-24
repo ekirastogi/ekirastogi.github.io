@@ -18,7 +18,7 @@ A Tree can be traversed in the following standard ways
 ## InOrder Traversal
 
 ```java
-package com.ekiras.ds;
+package com.ekiras.ds.trees.traversal;
 
 import com.ekiras.ds.base.TreeNode;
 
@@ -53,7 +53,7 @@ public class InOrderTreeTraversal {
 
 ## PreOrder Traversal
 ```java
-package com.ekiras.ds;
+package com.ekiras.ds.trees.traversal;
 
 import com.ekiras.ds.base.TreeNode;
 
@@ -89,7 +89,7 @@ public class PreOrderTreeTraversal {
 
 ## PostOrder Traversal
 ```java
-package com.ekiras.ds;
+package com.ekiras.ds.trees.traversal;
 
 import com.ekiras.ds.base.TreeNode;
 
