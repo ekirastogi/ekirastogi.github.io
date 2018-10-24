@@ -21,6 +21,11 @@ tags:
   b. While iterating, assign `node` to `node.next` and `i` to `i.next.next`.  
 
 ## Program
+{% capture code%} {% include _listNode.md%} {% endcapture %}
+{{code}}
+
+#### Main Class
+
 ```java
 package com.ekiras.ds.lists;
 
