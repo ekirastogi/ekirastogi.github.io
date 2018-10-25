@@ -6,17 +6,38 @@ tags: [Trees, DataStructures, Traversal]
 labels: [Trees, DataStructures, Traversal]
 ---
 
-# Tree Traversal
+## Tree Traversal
 A Tree can be traversed in the following standard ways
-1. In Order 
-2. Pre Order
+1. Pre Order 
+2. In Order
 3. Post Order
 
 {% capture code%} {% include _treenode.md%} {% endcapture %}
 {{code}}
 
-## InOrder Traversal
+### InOrder Traversal
+Inorder traversal means that for every node,
+1. First the left sub-tree of the node is traversed
+2. then the root node is traversed
+3. and at last the right node/ right sub-tree
 
+```
+                1
+               / \
+              2   3
+            /  \   \
+           4    5   6
+```
+For inorder traversal, we need to traverse the left sub tree first, so node `1`'s left sub-tree is traversed before node `1` itself. Node `2` is left of `1` and
+similarly for node `2`, node `4` is the left node. So first node in traversal will be `4` then `2` and then node `5`. Now we have traversed the left sub tree
+of the root node `1`, now we will print `1` and then traverse right sub tree of root node `1`.  
+
+So the final output will be as follows  
+```
+4 2 5 1 3 6 
+```
+
+#### Program
 ```java
 package com.ekiras.ds.trees.traversal;
 
@@ -25,11 +46,6 @@ import com.ekiras.ds.base.TreeNode;
 public class InOrderTreeTraversal {
 
     public static void main(String[] args) {
-        //         1
-        //        / \
-        //       2   3
-        //     /  \   \
-        //    4    5   6
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
         node.left.left = new TreeNode(4);
@@ -51,7 +67,26 @@ public class InOrderTreeTraversal {
 }
 ```
 
-## PreOrder Traversal
+### PreOrder Traversal
+PreOrder traversal means that for every node,
+1. First the node itself is traversed
+2. then the left sub-tree is traversed
+3. and at last the right sub-tree is traversed
+
+```
+                1
+               / \
+              2   3
+            /  \   \
+           4    5   6
+```
+For the above tree, root node 1 is traversed first, then we go to the left child of the root node that is `2` then to the left node of `2` that is `4`.
+Since `4` has no child nodes, we go back to node `2` and traverse its right node that is `5`. Now all the left nodes of root node have been traversed,
+so we will now traverse right sub-tree of `1`. So the traversal of above tree will give the following output
+```
+1 2 4 5 3 6
+```
+#### Program
 ```java
 package com.ekiras.ds.trees.traversal;
 
@@ -60,11 +95,6 @@ import com.ekiras.ds.base.TreeNode;
 public class PreOrderTreeTraversal {
 
     public static void main(String[] args) {
-        //         1
-        //        / \
-        //       2   3
-        //     /  \   \
-        //    4    5   6
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
         node.left.left = new TreeNode(4);
@@ -87,7 +117,24 @@ public class PreOrderTreeTraversal {
 }
 ```
 
-## PostOrder Traversal
+### PostOrder Traversal
+PostOrder traversal means that for every node,
+1. First the left sub-tree of the node is traversed
+2. then the right sub-tree of the root is traversed
+3. and at last the root node is traversed.
+
+```
+                1
+               / \
+              2   3
+            /  \   \
+           4    5   6
+```
+
+```
+6 3 5 4 2 1
+```
+#### Program
 ```java
 package com.ekiras.ds.trees.traversal;
 
@@ -96,11 +143,6 @@ import com.ekiras.ds.base.TreeNode;
 public class PostOrderTreeTraversal {
 
     public static void main(String[] args) {
-        //         1
-        //        / \
-        //       2   3
-        //     /  \   \
-        //    4    5   6
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
         node.left.left = new TreeNode(4);
