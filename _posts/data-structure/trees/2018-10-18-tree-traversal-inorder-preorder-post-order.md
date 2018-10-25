@@ -130,9 +130,13 @@ PostOrder traversal means that for every node,
             /  \   \
            4    5   6
 ```
-
+For the above tree, first the left sub tree of root node `1` is traversed, so we visit node `2`, then we visit left sub tree
+of node `2` that is `4`. Since node `4` has no child nodes we print `4`. Now right sub-tree of node `2` is traversed that is 
+`5`. After both left and right sub tree of node `2` is traversed we print node `2`. Now we traverse right sub tree of
+node `1`, that is node `3`. Node `3` has no left child but has a right child so node `6` will be printed first and then
+node `3` and finally node `1`. 
 ```
-6 3 5 4 2 1
+4 5 2 6 3 1 
 ```
 #### Program
 ```java
@@ -157,8 +161,8 @@ public class PostOrderTreeTraversal {
     {
         if(node==null)
             return;
-        postOrder(node.right);
         postOrder(node.left);
+        postOrder(node.right);
         System.out.print(node.data+" ");
     }
 }
