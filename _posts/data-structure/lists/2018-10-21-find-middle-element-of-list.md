@@ -12,6 +12,9 @@ tags:
 # Find the Middle Element of a List
 
 ## Question
+Given a list of integers, find the middle element of the list.
+1. If the list is null return -1.
+2. If the list has even numbers return the lower middle, example if list has [1,2], then return 1 as the middle element.
 
 ## Algorithm
 1. If list is `null` return -1
