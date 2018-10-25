@@ -2,9 +2,9 @@
 layout: default
 ---
 {% if page.author and site.data.authors[page.author] %}
-    {% assign author = site.data.authors[page.author] %}
+{% assign author = site.data.authors[page.author] %}
 {% else %}
-    {% assign author = site.data.authors[site.author] %}
+{% assign author = site.data.authors[site.author] %}
 {% endif %}
 
 
@@ -18,8 +18,12 @@ layout: default
                 {{ page.date | date: date_format }}
             </time>
 
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author.name }}</span></span>
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author.name }}</span>
+        </span>
+        </p>
     </header>
+
 
     <!--{% include author.html %}-->
     <!--Adsense-->
@@ -35,7 +39,7 @@ layout: default
 
     <!--Disqus-->
     {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
+    {%- include disqus_comments.html -%}
     {%- endif -%}
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
