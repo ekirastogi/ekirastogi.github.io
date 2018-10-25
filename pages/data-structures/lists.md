@@ -4,7 +4,7 @@ title: Lists
 showInHeader: false
 permalink: /data-structures/lists
 ---
-
+{% if jekyll.environment == "production" %}
 <ol>
   {% for post in site.categories.lists %}
     {% if post.url %}
@@ -12,3 +12,4 @@ permalink: /data-structures/lists
     {% endif %}
   {% endfor %}
 </ol>
+{% endif %}

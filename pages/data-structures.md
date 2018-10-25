@@ -3,6 +3,7 @@ layout: page
 title: Data Structures
 order: 2
 permalink: /data-structures/
+showInHeader: true
 ---
 
 1. [Lists](/data-structures/lists)

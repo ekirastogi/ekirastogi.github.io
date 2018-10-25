@@ -4,7 +4,7 @@ title: Trees
 showInHeader: false
 permalink: /data-structures/trees
 ---
-
+{% if jekyll.environment == "production" %}
 <ol>
   {% for post in site.categories.trees %}
     {% if post.url %}
@@ -12,3 +12,4 @@ permalink: /data-structures/trees
     {% endif %}
   {% endfor %}
 </ol>
+{% endif %}
