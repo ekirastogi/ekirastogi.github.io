@@ -11,7 +11,8 @@ tags:
 
 ## Question 
 Convert a given array into zig-zag pattern, where each even indexed number is greater than both the odd
-indexed numbers.   
+indexed numbers such that resulting array should be like, a < b > c < d > e < f
+
 e.g given array is {1,2,3,4,5} so the output of the array should be {1,3,2,5,4}  
  
 
