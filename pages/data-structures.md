@@ -6,5 +6,6 @@ permalink: /data-structures/
 showInHeader: true
 ---
 
-1. [Lists](/data-structures/lists)
-2. [Trees](/data-structures/trees) 
+1. [Arrays](/data-structures/arrays) 
+2. [Lists](/data-structures/lists)
+3. [Trees](/data-structures/trees) 
